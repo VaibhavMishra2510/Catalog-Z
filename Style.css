@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav h1 {
+  color: lightblue;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.header {
+  background-image: url(background.jpg);
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header input {
+  height: 50px;
+  width: 200%;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+}
+.Second h1 {
+  color: lightblue;
+}
+.third {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+.fourth {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.Newbutton {
+  background-color: #009999;
+  color: white;
+  border-radius: 2px;
+  padding: 8px 15px;
+}
+.btn {
+  color: black;
+  border-radius: 2px;
+  padding: 8px 15px;
+}
+.Sixth {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #eeeeee;
+  padding: 15px;
+}
+.About {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.About h1{
+  color: #009999;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.links h1{
+  color: #009999;
+}
+
+.SocialMediaIcon {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #eeeeee;
+}
