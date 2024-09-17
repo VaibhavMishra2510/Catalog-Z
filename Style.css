@@ -31,7 +31,7 @@
   height: 50px;
   width: 200%;
 }
-.search {
+.Search {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,12 +51,13 @@
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
+
 }
 .Newbutton {
   background-color: #009999;
   color: white;
   border-radius: 2px;
-  padding: 8px 15px;
+  padding: 8px 15px; 
 }
 .btn {
   color: black;
@@ -73,6 +74,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+ 
 }
 .About h1{
   color: #009999;
@@ -80,7 +82,10 @@
 .links {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
   gap: 20px;
+  
+  
 }
 .links h1{
   color: #009999;
@@ -89,10 +94,233 @@
 .SocialMediaIcon {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
   gap: 80px;
 }
 .info {
   display: flex;
   justify-content: space-evenly;
   background-color: #eeeeee;
+}
+
+/* Responsive */
+/* Basic resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: lightblue;  
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+}
+
+.header {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.header input {
+  height: 50px;
+  width: 40%;
+}
+
+.Search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 40%;
+}
+
+.second h1 {
+  color: lightblue;
+  text-align: center;
+}
+
+.third {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  gap: 10px;
+}
+
+.third img {
+  width: 100%;
+  max-width: 305px;
+  height: auto;
+}
+
+.fourth {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.Newbutton {
+  background-color: #009999;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 2px;
+  border: none;
+}
+
+.btn {
+  padding: 8px 15px;
+  border-radius: 2px;
+  border: none;
+}
+
+.sixth {
+  display: flex;
+  justify-content: space-evenly;
+
+
+}
+.links li {
+  
+list-style-type: none;
+
+}
+.SocialMediaIcon li {
+  padding: 0 20 0 0;
+list-style-type: none;
+
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.about h1, .ourlinks h1 {
+  color: #009999;
+}
+
+.about, .ourlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+.links{
+  padding: 0 0 0 25px;
+
+}
+.SocialMediaIcon{
+   padding: 0 0 0 25px;
+}
+.footer {
+  background-color: #eeeeee;
+  padding: 10px;
+}
+
+.info {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  text-align: center;
+  
+}
+
+/* Responsive design starts here */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .header input {
+    width: 80%;
+  }
+
+  .third {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fourth {
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  .Newbutton, .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .Sixth {
+    flex-direction: column;
+    align-items: left;
+    padding-left: 40PX;
+  } 
+  
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+    padding: 40PX;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 250px;
+  }
+
+  .header input {
+    height: 40px;
+    width: 90%;
+  }
+
+  .nav ul {
+    gap: 5px;
+  }
+
+  .third img {
+    max-width: 100%;
+  }
+
+  .fourth {
+    flex-direction: column;
+  }
+
+  .fifth {
+    width: 30%;
+  }
+
+  .sixth {
+    flex-direction: column;
+  }
+
+  .info {
+    text-align: center;
+  }
 }
